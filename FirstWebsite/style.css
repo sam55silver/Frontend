@@ -1,0 +1,76 @@
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #728566;
+  color: wheat;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: wheat;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #728566;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: rgb(160, 143, 113);
+  color: #54624c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: #2f382a;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  background-color: #54634b;
+  padding: 20px;
+}
+
+img {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
